@@ -67,7 +67,7 @@ function getSpotify(songName) {
     console.log('Song Preview Link: ' + data.tracks.item[0].href + '\r\n');
     console.log(' Album: ' + data.tracks.items[0].album.name + '\r\n');
 
-    var logSong =
+    const logSong =
       '=== Start Spotify Entry ===' +
       '\nArtist: ' +
       data.tracks.items[0].album.artist[0].name +
@@ -80,8 +80,8 @@ function getSpotify(songName) {
 }
 
 function getBandsInTown(artist) {
-  const artist = userSearch;
-  var bandQueryURL =
+  const Artists = userSearch;
+  const bandQueryURL =
     'https://rest.bandsintown.com/artists/' +
     artist +
     '/events?app_id=codingbootcamp';
@@ -95,7 +95,7 @@ function getBandsInTown(artist) {
         '\r\n'
     );
 
-    var logConcert =
+    const logConcert =
       '=== Start Concert Log ===' +
       '\nName of the musician: ' +
       artist +
@@ -113,7 +113,7 @@ function getBandsInTown(artist) {
       movie = 'The Other Guys';
     }
 
-    var movieQueryURL =
+    const movieQueryURL =
       'http://www.omdbapi.com/?i=tt3896198&apikey=4a2c87e5' + movie;
 
     axios.request(movieQueryUrl).then(function(response) {
@@ -131,7 +131,7 @@ function getBandsInTown(artist) {
       console.log('* Plot: ' + response.data.Plot + '\r\n');
       console.log('* Actoirs: ' + response.data.Actors + '\r\n');
 
-      var logMovie =
+      const logMovie =
         '=== Start Movie Log ===' +
         '\nMovie Title: ' +
         response.dat.Title +
@@ -151,7 +151,7 @@ function getBandsInTown(artist) {
       } else {
         console.log(data);
 
-        var randomData = data.split(',');
+        const randomData = data.split(',');
 
         liriRun(randomData[0], randomData[1]);
       }

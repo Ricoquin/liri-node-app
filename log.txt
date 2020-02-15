@@ -1,1 +1,8 @@
-spotify-this-song, "Wish you were here"
+spotify-this-song, "Wish you were here"=== Start Spotify Entry ===
+Artist: Pink Floyd
+=== Start Concert Log ===
+Name of the musician: Incubus
+Name of the venue
+=== Start Concert Log ===
+Name of the musician: Incubus
+Name of the venue

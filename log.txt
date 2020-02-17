@@ -6,3 +6,8 @@ Name of the venue
 === Start Concert Log ===
 Name of the musician: Incubus
 Name of the venue
+=== Start Concert Log ===
+Name of the musician: lady gaga
+Name of the venue
+=== Start Spotify Entry ===
+Artist: The Presidents Of The United States Of America
